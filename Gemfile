@@ -1,11 +1,13 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails', '3.2.8'
 
 gem 'authlogic'
 
 gem 'mime-types', :require => 'mime/types'
-gem 'carrierwave', '0.6.1'
+gem 'carrierwave', '0.6.2'
+
+gem 'thin'
 
 # -- Heroku
 #gem 'heroku'
@@ -27,10 +29,10 @@ gem 'fog'
 
 # -- Photo resizing
 # MiniMagick
-gem "mini_magick"
+#gem "mini_magick"
 
 # ImageMagick:
-#gem "rmagick", :require => 'RMagick'
+gem "rmagick", :require => 'RMagick'
 
 # FreeImage:
 #gem "RubyInline"
