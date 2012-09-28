@@ -8,6 +8,7 @@ doc/api
 doc/app
 config/database.yml
 config/settings.yml
+config/balder.rb
 config/deploy.rb
 config/deploy
 Capfile
