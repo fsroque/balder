@@ -16,6 +16,7 @@
 </div>
 
 <h2><%= @photo.title%></h2>
+<small><%= @photo.created_at.to_s(:pretty) %></small>
 
 <p><%= @photo.description %></p>
 <p>Tagged with: 
