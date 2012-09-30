@@ -8,16 +8,14 @@
 			<% end %>
 			<% end %>
 			<% unless @next.nil? %>
-			<%= link_to "Next", [ @photo.album.collections.first, @photo.album, @next] %> 
+			<%= link_to "Next", [ @photo.album.collections.first, @photo.album, @next ] %> 
 			<% end %>
 		</p>
 	</div>
-  <p><%= link_to_if @next, image_tag(@photo.file.single.url ), [ @photo.album.collections.first, @photo.album, @next] %></p>
+  <p><%= link_to_if @next, image_tag(@photo.file.single.url , {:id => "photo"}), [ @photo.album.collections.first, @photo.album, @next], :anchor => "photo" %></p>
 </div>
-
 <h2><%= @photo.title%></h2>
-<small><%= @photo.created_at.to_s(:pretty) %></small>
-
+<p><%= @photo.created_at.to_s(:pretty) %></p>
 <p><%= @photo.description %></p>
 <p>Tagged with: 
 <% for tag in @photo.tags.map{|tag|tag.title}.sort %>
